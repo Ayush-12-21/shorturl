@@ -20,7 +20,7 @@ const port = 8001;
 const app = express();
 
 connectToMongoDB("mongodb://localhost:27017/shorturl")
-  .then(() => console.log("connected to mongodb"))
+  .then(() => console.log("connected to mongodb "))
   .catch(err => console.error(err));
 
 app.set("view engine","ejs");
